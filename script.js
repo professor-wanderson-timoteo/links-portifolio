@@ -5,12 +5,12 @@ function toggleMode() {
   // pegar a tag img
   const img = document.querySelector("#profile img");
 
-  // Substituir a imagem
+  // substituir a imagem
   if (html.classList.contains("light")) {
-    // Se tiver light mode, adicionar a imagem light
+    // se tiver light mode, adicionar a imagem light
     img.setAttribute("src", "./assets/avatar-light.png");
   } else {
-    // Se tiver dark mode, adicionar a imagem dark
+    // set tiver sem light mode, manter a imagem normal
     img.setAttribute("src", "./assets/avatar.png");
   }
 }

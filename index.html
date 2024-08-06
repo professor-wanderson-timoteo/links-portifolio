@@ -1,126 +1,148 @@
+<!-- Define uma arquivo HTML5 -->
 <!DOCTYPE html>
+
+<!-- html é o elemento root(Raiz) do uma arquivo HTML5,  atributo lang que podemos definir a linguagem do nosso site -->
 <html lang="pt-br">
+  <!-- Define as configurações do nosso documento HTML que não são visíveis para quem esta acessando a nossa página, a única tag visível dentro de head é a title -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Define o conjunto de caracteres que vamos utilizar em nosso site, UTF-8 permite usarmos caracteres especiais com ~(sinal gráfico til), ^(Acento Circunflexo), ´(acento agudo), `(crase),  -->
+    <meta charset="UTF-8" />
+
+    <!-- Define compatibilidade com navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- O atributo name definido viewport, o que será mostrado na tela, ou seja, é tudo que podemos ver num site,  o atributo content define a largura do meu dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Perfil Wanderson Timóteo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
       <div id="profile">
         <img
           src="./assets/avatar.png"
-          alt="Foto de Wanderson Timóteo, usando óculos escuro e camiseta salmão, barba e fundo gradiente azul escuro e roxo"
+          alt="Foto de Wanderson Timóteo, usando óculos escuro e camiseta salmão, barba e fundo gradiente azul escuro e roxo."
         />
         <p>@wanderson.timoteo</p>
         <span>Desenvolvedor Full Stack e Educador</span>
       </div>
-      <!-- finish profile -->
 
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
-      <!-- finish switch -->
 
-      <!-- Links Games -->
       <ul>
-        <!-- Game Modern Space Invaders -->
+        <!-- Linkedin -->
         <li>
           <a
-            href="https://professor-wanderson-timoteo.github.io/modern-space-invaders/"
+            href="https://www.linkedin.com/in/wanderson-a-timoteo"
             target="_blank"
           >
-            <ion-icon name="rocket-outline"></ion-icon>
-            Modern Space Invaders
+            <ion-icon name="logo-linkedin"></ion-icon>
+            Conheça minha trajetória profissional
           </a>
         </li>
-        <!-- Game Modern Space Invaders -->
+
+        <!-- Github -->
         <li>
           <a
-            href="https://professor-wanderson-timoteo.github.io/modern-space-invaders/"
+            href="https://github.com/professor-wanderson-timoteo"
             target="_blank"
           >
-            <ion-icon name="rocket-outline"></ion-icon>
-            Modern Space Invaders
+            <ion-icon name="logo-github"></ion-icon>
+            Analise meus projetos e estudos
           </a>
         </li>
-        <!-- Game Modern Space Invaders -->
+
+        <!-- Facebook -->
         <li>
           <a
-            href="https://professor-wanderson-timoteo.github.io/modern-space-invaders/"
+            href="https://www.facebook.com/wanderson.a.timoteo"
             target="_blank"
           >
-            <ion-icon name="rocket-outline"></ion-icon>
-            Modern Space Invaders
+            <ion-icon name="logo-facebook"></ion-icon>
+            Veja meu status e meus feeds!
+          </a>
+        </li>
+
+        <!-- Facebook -->
+        <li>
+          <a
+            href="https://www.instagram.com/wanderson_a_timoteo"
+            target="_blank"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+            Venha me conhecer um mais um pouco!
+          </a>
+        </li>
+
+        <!-- YouTube -->
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCYnS7pxwA-io-jWU78z1eVQ"
+            target="_blank"
+          >
+            <ion-icon name="logo-youtube"></ion-icon>
+            Assista meus vídeos e dê seu feedback!
+          </a>
+        </li>
+
+        <!-- Twitter -->
+        <li>
+          <a href="https://twitter.com/WandersonAT" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+            As nóticias que estão acontecendo no mundo!
+          </a>
+        </li>
+
+        <!-- WhatsApp -->
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=55065992925286"
+            target="_blank"
+          >
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            Contato profissional rápido
           </a>
         </li>
       </ul>
-      <!-- Finish Links Games -->
 
-      <!-- Social Media -->
+      <!-- Redes Sociais -->
       <div id="social-links">
-        <!-- Github -->
-        <a
-          href="https://github.com/professor-wanderson-timoteo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/maykbrito" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <!-- Instagram -->
-        <a
-          href="https://www.instagram.com/wanderson_a_timoteo/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <a href="https://instagram.com/maykbrito" target="_blank">
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <!-- Linkedin -->
-        <a
-          href="https://github.com/professor-wanderson-timoteo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <a href="https://youtube.com/maykbrito" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://linkedin.com/in/maykbrito" target="_blank">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        <!-- TikTok -->
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <ion-icon name="logo-tiktok"></ion-icon>
-        </a>
-        <!-- Twitter -->
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <!-- Facebook -->
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
       </div>
-      <!-- Finish Social Links -->
 
-      <!-- Footer -->
       <footer>
         <span>Copyright &copy; 2024 Todos os direitos reservados - </span>
-        <a 
-          href="https://wandersontimoteo.com.br/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="https://wandersontimoteo.com.br/" target="_blank"
+          >Wanderson Timóteo</a
         >
-          Wanderson Timóteo
-        </a>
       </footer>
     </div>
-    <!-- Finish Footer -->
 
-    <!-- Scripts JS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -129,6 +151,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
     <script src="./script.js"></script>
   </body>
 </html>
